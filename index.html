@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My ebay</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /**** Header ****/
+
+        header {
+            box-shadow: 0 3px 5px #CCC;
+            padding: 9px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .navbar {
+            list-style-type: none;
+            font-size: 12px;
+        }
+
+        li.navItem {
+            display: inline;
+            border-right: 1px solid #777;
+        }
+
+        li.navItem a {
+            padding: 0 9px;
+            color: #555;
+        }
+
+        li.navItem a:link {
+            text-decoration: none;
+        }
+
+        li.navItem a:hover {
+            text-decoration: underline;
+            color: #0654BA;
+        }
+
+        #signin-style a:link {
+            color: #0654BA;
+            padding: 0;
+        }
+
+        #signin-style a:link:last-child {
+            padding-right: 16px;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .no-border {
+            border-right: none !important;
+        }
+
+        #alert {
+            padding: 0 15px 0 25px;
+            font-size: 15px;
+        }
+
+        #cart {
+            padding: 0 15px 0 25px;
+            font-size: 15px;
+        }
+        
+        #brand {
+            height: 70px;
+        }
+        
+        /**** Search Form ****/
+        
+        #search-bar {
+            width: 100%;
+            height: 65px;
+            overflow: hidden;
+        }
+        
+        .setBGColor {
+            background-color: #F9F9F9;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        #brand {
+            float: left;
+        }
+        
+        #shopping-button {
+            float: left;
+            width: 70px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+            border: none;
+            background-color: #F9F9F9;
+            margin-right: 15px;
+        }
+        
+        #arrow {
+            position: relative;
+            bottom: 43px;
+            left: 40px;
+            font-size: 18px;
+        }
+        
+        #search-form {
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <ul class="navbar">
+            <li id="signin-style" class="navItem">Hi! <a href="#">Sign in</a> or <a href="#">Register</a></li>
+            <li class="navItem"><a href="#">Daily Deals</a></li>
+            <li class="navItem"><a href="#">Sell</a></li>
+            <li class="navItem no-border"><a href="#">Help & Contact</a></li>
+            <li id="cart" class="navItem float-right no-border"><i class="shopping cart icon"></i></li>
+            <li id="alert" class="navItem float-right no-border"><i class="bell icon"></i></li>
+            <li class="navItem float-right no-border"><a href="#">My eBay</a></li>
+        </ul>
+    </div>
+</header>
+<!-- Search Form -->
+<div id="search-bar" class="clearfix setBGColor">
+    <div class="container">
+        <img id="brand" src="img/logo.png" alt="eBay">
+        
+        <button id="shopping-button" type="button">
+            <p>Shop by Category</p>
+            <i class="caret down icon" id="arrow"></i>
+        </button>
+        
+        <form id="search-form">
+            <table>
+                <tr>
+                    <td><input id="search-field" class="text-field" type="text" name="search-content" placeholder="Search for anything"></td>
+                    <td>
+                       <div id="category-textfield" class="text-field">
+                           <select class="options" name="cate">
+                              <option selected="selected" value="0">All Category</option>
+                              <option value="1">Antiques</option>
+                              <option value="2">Art</option>
+                              <option value="3">Baby</option>
+                              <option value="4">Books</option>
+                              <option value="5">Business &amp; Industrial</option>
+                              <option value="6">Camera &amp; Photo</option>
+                              <option value="7">Cellphone &amp; Accessories</option>
+                           </select>
+                       </div>
+                    </td>
+                    <td>
+                        <input class="btn-primary" vlaue="Search" type="submit">
+                    </td>
+                    <td>
+                        <a href="#" id="advanced-button" title="Advanced Search">Advanced</a>
+                    </td>
+                </tr>
+            </table>            
+        </form>
+    </div>
+</div>
+
+
+</body></html>
